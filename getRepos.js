@@ -9,7 +9,11 @@ async function getGithubRepo() {
     }
 
     const repoContent = await response.json();
+    const repoDiv = document.getElementById("challengeWrapper");
     repoContent.forEach((repo) => {
+      const repoElement = document.createElement("li");
+      repoElement.textContent = repo.name;
+      repoDiv.appendChild(repoElement);
       console.log(repo);
     });
   } catch (error) {
