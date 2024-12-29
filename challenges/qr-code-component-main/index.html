@@ -20,6 +20,16 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --slate-300: hsl(212, 45%, 89%);
+        --slate-500: hsl(216, 15%, 48%);
+        --slate-900: hsl(218, 44%, 22%);
+      }
+      body {
+        font-family: "Outfit", sans-serif;
+        line-height: 1.25;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -29,19 +39,25 @@
       }
     </style>
   </head>
-  <body class="bg-[hsl(212,45%,89%)]">
+  <body style="background-color: var(--slate-300)">
     <div class="flex justify-center items-center h-screen">
-      <div class="w-72 h-[475px] bg-[hsl(0,0%,100%)] rounded-2xl p-3.5">
+      <div
+        class="w-72 min-h-[350px] rounded-2xl p-3.5"
+        style="background-color: var(--white)"
+      >
         <img
           src="./images/image-qr-code.png"
           alt=""
           class="w-full rounded-xl"
         />
-        <div class="mx-3">
-          <h2 class="text-[20px] font-bold text-center my-4 font-outfit">
+        <div class="mx-3 my-5">
+          <h2
+            class="text-[20px] font-bold text-center my-4"
+            style="color: var(--slate-900)"
+          >
             Improve your front-end skills by building projects
           </h2>
-          <p class="text-center text-[15px] text-slate-400 font-outfit">
+          <p class="text-center text-[15px]" style="color: var(--slate-500)">
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
           </p>
