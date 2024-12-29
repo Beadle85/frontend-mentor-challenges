@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Beadle | Frontend Mentor Challenges</title>
+    <link rel="stylesheet" href="/output.css" />
     <!-- <link href="css/style.css" rel="stylesheet" /> -->
   </head>
-  <body>
-    hello world
-    <ul id="challengeWrapper"></ul>
+  <body class="bg-lime-100 min-h-screen">
+    <div class="max-w-7xl mx-auto p-4 md:p-6 lg:p-8 flex">
+      <ul id="challengeWrapper"></ul>
 
-    <template id="link-template">
-      <li class="challenge-item">
-        <a href="#" class="challenge-link">Challenge name</a>
-      </li>
-    </template>
+      <template id="link-template">
+        <li class="challenge-item border-2 rounded-lg p-8 border-indigo-400">
+          <a href="#" class="challenge-link text-indigo-500">Challenge name</a>
+        </li>
+      </template>
+    </div>
 
     <script src="./getRepos.js"></script>
   </body>
