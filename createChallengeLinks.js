@@ -5,7 +5,7 @@ function createChallengeLinks() {
   ];
 
   const challengeWrapper = document.getElementById("challengeWrapper");
-  const template = document.getElementById("link-template");
+  const template = document.getElementById("linkTemplate");
 
   challenges.forEach((challengeName) => {
     const clone = template.content.cloneNode(true);
