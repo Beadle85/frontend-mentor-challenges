@@ -1,6 +1,7 @@
 function createChallengeLinks() {
   const challenges = [
     "qr-code-component-main",
+    "blog-preview-card-main",
     // Add other challenge folder names here
   ];
 
